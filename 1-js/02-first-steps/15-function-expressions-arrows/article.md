@@ -65,7 +65,7 @@ That's what happens above in detail:
 1. Function Declaration `(1)` creates the function and puts it into the variable named `sayHi`.
 2. Line `(2)` copies it into variable `func`.
 
-    Please note again: there are no parentheses after `sayHi`. If they were, then `func = sayHi()` would write  *the result of the call* `sayHi()` into `func`, not *the function* `sayHi` itself.
+    Please note again: there are no parentheses after `sayHi`. If there were, then `func = sayHi()` would write  *the result of the call* `sayHi()` into `func`, not *the function* `sayHi` itself.
 3. Now the function can be called both as `sayHi()` and `func()`.
 
 Note, that we could also have used a Function Expression to declare `sayHi`, in the first line:
@@ -228,7 +228,7 @@ function sayHi(name) {
 
 Function Declaration `sayHi` is created when JavaScript is preparing to start the script and is visible everywhere in it.
 
-...And if there were Function Expression, then it wouldn't work:
+...But if it were a Function Expression, it wouldn't work:
 
 ```js run refresh untrusted
 *!*
@@ -249,7 +249,7 @@ When Function Declaration is made within a code block, it is visible everywhere 
 
 Sometimes that's handy to declare a local function only needed in that only block. But that feature may also cause problems.
 
-For instance, let's imagine that we need to declare a function `welcome()` depending on the `age` variable that we get in run time. And then we plan to use it sometimes later.
+For instance, let's imagine that we need to declare a function `welcome()` depending on the `age` variable, which we get at run time, and we plan to use the function sometime later.
 
 The code below doesn't work:
 
