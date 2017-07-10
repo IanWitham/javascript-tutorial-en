@@ -57,7 +57,7 @@ To fully enable all features of modern JavaScript, we should start scripts with 
 
 The directive must be at the top of a script or at the beginning of a function.
 
-Without `"use strict"`, everything still works, but some features behave in old-fasion, "compatible" way. We'd generally prefer the modern behavior.
+Without `"use strict"`, everything still works, but some features behave in an old-fashioned, "compatible" way. We'd generally prefer the modern behavior.
 
 Some modern features of the language (like classes that we'll study in the future) enable strict mode implicitly.
 
@@ -90,7 +90,7 @@ There are 7 data types:
 - `boolean` for logical values: `true/false`,
 - `null` -- a type with a single value `null`, meaning "empty" or "does not exist",
 - `undefined` -- a type with a single value `undefined`, meaning "not assigned",
-- `object` and `symbol` -- for complex data structures and unique identifiers, we didn't learn them yet.
+- `object` and `symbol` -- for complex data structures and unique identifiers. We haven't learned these yet.
 
 The `typeof` operator returns the type for a value, with two exceptions:
 ```js
@@ -105,7 +105,7 @@ More in: <info:variables> and <info:types>.
 We're using a browser as a working environment, so basic UI functions will be:
 
 [`prompt(question[, default])`](mdn:api/Window/prompt)
-: Ask a `question`, and return either what the visitor entered or `null` if he pressed "cancel".
+: Ask a `question`, and return either what the visitor entered or `null` if they pressed "cancel".
 
 [`confirm(question)`](mdn:api/Window/confirm)
 : Ask a `question` and suggest to choose between Ok and Cancel. The choice is returned as `true/false`.
@@ -113,7 +113,7 @@ We're using a browser as a working environment, so basic UI functions will be:
 [`alert(message)`](mdn:api/Window/alert)
 : Output a `message`.
 
-All these functions are *modal*, they pause the code execution and prevent the visitor from interaction with the page until he answers.
+All these functions are *modal*, they pause the code execution and prevent the visitor from interaction with the page until they have answered.
 
 For instance:
 
